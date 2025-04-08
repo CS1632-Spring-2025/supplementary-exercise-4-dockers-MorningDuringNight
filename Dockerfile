@@ -16,3 +16,6 @@ EXPOSE 8080
 
 # define default command
 CMD ["/bin/sh", "-c", "mvn spring-boot:run"]
+
+# each one of these are layers which then is launched with another layer called the launch layer
+# the container layer is kinda fake and then we can delete that one
